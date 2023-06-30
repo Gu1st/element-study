@@ -1,0 +1,16 @@
+@use 'config' as *;
+
+@mixin b($block){
+    $B:$namespace + $common-separator + $block !global;
+    &.#{$b}{
+        @content;
+    }
+}
+
+@mixin when($state){
+    @at-root{
+        &.#{$state-prefix + $state}{
+            @content;
+        }
+    }
+}
