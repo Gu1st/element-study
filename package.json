@@ -1,14 +1,14 @@
 {
   "name": "container",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
-    "release":"release-it",
-    "commit":"git-cz"
+    "release": "release-it",
+    "commit": "git-cz"
   },
   "dependencies": {
     "vue": "^3.2.47"
