@@ -1,5 +1,12 @@
 
 
+# [0.3.0](https://github.com/Gu1st/element-study/compare/0.2.0...0.3.0) (2023-07-03)
+
+
+### Features
+
+* 🎸 布局组件和样式编写 ([283bffd](https://github.com/Gu1st/element-study/commit/283bffd2e9cbbffecf0dc61a4c7a2a7e2ee982eb))
+
 # [0.2.0](https://github.com/Gu1st/element-study/compare/0.1.0...0.2.0) (2023-07-03)
 
 
