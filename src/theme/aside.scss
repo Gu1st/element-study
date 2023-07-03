@@ -1,4 +1,6 @@
 @use 'mixins/mixins' as *;
+@use 'mixins/function' as *;
+
 
 // 宽度默认300
 @include b(aside) {

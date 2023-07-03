@@ -1,6 +1,7 @@
 @use 'mixins/mixins' as *;
 @use 'mixins/var' as *;
 @use 'common/var' as *;
+@use 'mixins/function' as *;
 
 @include b(footer){
     @include set-component-css-var('footer',$footer);

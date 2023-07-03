@@ -2,7 +2,7 @@
 
 @mixin b($block){
     $B:$namespace + $common-separator + $block !global;
-    &.#{$b}{
+    .#{$B}{
         @content;
     }
 }

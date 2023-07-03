@@ -1,12 +1,13 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
+    "baseUrl": "./",
+    "outDir": "./",
     "target": "ES2020",
     "useDefineForClassFields": true,
     "module": "ESNext",
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "skipLibCheck": true,
-    "types": ["unplugin-vue-macros/macros-global","node"],
+    "types": ["node","unplugin-vue-macros/macros-global"],
     "paths": {
       "@/*":["src/*"]
     },
@@ -34,5 +35,6 @@
     ]
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "exclude": ["node_modules","dist"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

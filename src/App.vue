@@ -1,5 +1,7 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import ContainerDemo from "@/demo/container.vue";
+</script>
 
 <template>
-  <div>123</div>
+  <ContainerDemo />
 </template>

@@ -19,6 +19,6 @@ const props = defineProps({
 
 const ns = useNamespace("aside");
 const styles = computed(() => {
-  return props.width ? ns.cssVarBlock({ height: props.width }) : {};
+  return props.width ? ns.cssVarBlock({ width: props.width }) : {};
 });
 </script>

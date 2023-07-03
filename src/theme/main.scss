@@ -1,6 +1,8 @@
 @use 'mixins/mixins' as *;
 @use 'mixins/_var' as *;
 @use 'common/var' as *;
+@use 'mixins/function' as *;
+
 
 @include b(main){
     @include set-component-css-var('main',$main);

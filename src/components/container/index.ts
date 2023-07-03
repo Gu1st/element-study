@@ -1,15 +1,21 @@
 import Aside from "./src/aside.vue";
 import Container from "./src/container.vue";
-import Footer from "./src/fiiter.vue";
+import Footer from "./src/footer.vue";
 import Header from "./src/header.vue";
 import Main from "./src/main.vue";
-import type { App } from "vue";
+import { withInstall, withNoopInstall } from "@/hooks";
 
-export const HarexsContainer = {
-  install(app: App) {
-    app.component(Container.name, Container);
-  },
-};
+export const HarexsContainer = withInstall(Container, {
+  Aside,
+  Footer,
+  Header,
+  Main,
+});
+
+export const HarexsHeader = withNoopInstall(Header);
+export const HarexsFooter = withNoopInstall(Footer);
+export const HarexsMain = withNoopInstall(Main);
+export const HarexsAside = withNoopInstall(Aside);
 
 export type ContainerInstance = InstanceType<typeof Container>;
 export type AsideInstance = InstanceType<typeof Aside>;

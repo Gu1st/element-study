@@ -1,6 +1,8 @@
 @use 'mixins/mixins' as *;
 @use 'mixins/_var' as *;
 @use 'common/var' as *;
+@use 'mixins/function' as *;
+
 
 @include b(header){
     // 通过函数 生成对应的 样式规则 --harexs-header-padding:20px 0

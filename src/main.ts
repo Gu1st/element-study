@@ -1,6 +1,9 @@
 import { createApp } from "vue";
 import App from "./App.vue";
-import ElementPlus from "element-plus";
+import "normalize.css";
+import HarexsPlus from "./install";
+import "@/theme/index.scss";
 
-console.log(ElementPlus);
-createApp(App).mount("#app");
+const app = createApp(App);
+app.use(HarexsPlus);
+app.mount("#app");

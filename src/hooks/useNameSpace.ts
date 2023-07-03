@@ -32,7 +32,7 @@ export const useNamespace = (block: string) => {
     _bem(defaultNamespace, block, blockSuffix, element, modifer);
   // is-xxx
   const is = (name: string, ...args: [boolean | undefined] | []) => {
-    const state = args.length > 1 ? args[0] : true;
+    const state = args.length > 0 ? args[0] : true;
     return name && state ? `${statePrefix}${name}` : "";
   };
   // --el-xxx
