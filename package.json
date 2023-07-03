@@ -8,9 +8,10 @@
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
     "release": "release-it",
-    "commit": "git-cz"
+    "commit": "git add . && git-cz"
   },
   "dependencies": {
+    "element-plus": "^2.3.7",
     "vue": "^3.2.47"
   },
   "devDependencies": {

@@ -1,7 +1,5 @@
 <script setup lang="ts"></script>
 
 <template>
-  <span>123</span>
+  <div>123</div>
 </template>
-
-<style scoped></style>

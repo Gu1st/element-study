@@ -1,0 +1,14 @@
+@use 'mixins/mixins' as *;
+@use 'mixins/_var' as *;
+@use 'common/var' as *;
+
+@include b(header){
+    // 通过函数 生成对应的 样式规则 --harexs-header-padding:20px 0
+    @include set-component-css-var('header',$header);
+    
+    // getCssVar 会返回拼接的 --harexs-header-height 这样就取了前面定义的变量了
+    height: getCssVar('header-height');
+    padding:getCssVar('header-padding');
+    box-sizing: border-box;
+    flex-shrink: 0;
+}

@@ -1,0 +1,19 @@
+@use 'config';
+
+@function joinVarName($list){
+    $name:'--' + config.$namespace;
+    @each $key in $list{
+        @if $key != ''{
+            $name:$name + '-' + $key
+        }
+    }
+    @return $name
+};
+
+@function getCssVar($args...){
+    @return var(#{joinVarName($args)});
+};
+
+@function getCssVarName($args...){
+    @return #{joinVarName($args)};
+}

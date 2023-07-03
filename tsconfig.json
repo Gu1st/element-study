@@ -1,11 +1,15 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "target": "ES2020",
     "useDefineForClassFields": true,
     "module": "ESNext",
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "skipLibCheck": true,
     "types": ["unplugin-vue-macros/macros-global","node"],
+    "paths": {
+      "@/*":["src/*"]
+    },
     /* Bundler mode */
     "moduleResolution": "Node",
     "isolatedModules": true,
