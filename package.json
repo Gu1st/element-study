@@ -6,13 +6,20 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "release":"release-it",
+    "commit":"git-cz"
   },
   "dependencies": {
     "vue": "^3.2.47"
   },
   "devDependencies": {
+    "@release-it/conventional-changelog": "^5.1.1",
+    "@types/node": "^20.3.2",
     "@vitejs/plugin-vue": "^4.1.0",
+    "@vue-macros/volar": "^0.11.0",
+    "git-cz": "^4.9.0",
+    "release-it": "^15.11.0",
     "sass": "^1.63.6",
     "typescript": "^5.0.2",
     "unplugin-vue-macros": "^2.3.0",

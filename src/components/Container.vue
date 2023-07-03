@@ -1,10 +1,11 @@
 <template>
-  <section>
+  <section :class="['harexs-container', isVertical ? 'is-vertical' : '']">
     <slot />
   </section>
 </template>
 
 <script setup lang="ts">
+import { computed } from "vue";
 defineOptions({
   name: "HarexsContainer",
 });
@@ -14,4 +15,7 @@ const props = defineProps({
   },
 });
 console.log(props);
+const isVertical = computed(() => {
+  return true;
+});
 </script>
